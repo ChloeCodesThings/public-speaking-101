@@ -1,0 +1,21 @@
+title: Public Speaking 101
+tagline: A brand new course on Learning Lab
+description: >-
+  Whether it's a meeting, presentation, conference talk, wedding toast,
+  interview, or on-stage keynote- public speaking opportunities are everywhere!
+  In this course we'll review the tips and tricks of what makes a awesome public
+  speaker!
+template:
+  repo: public-speaking-101-template
+  name: public-speaking-101
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
